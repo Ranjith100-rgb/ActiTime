@@ -1,12 +1,17 @@
 package com.genricUtility;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -249,7 +254,20 @@ public class WebUtility
 				  JavascriptExecutor jse=(JavascriptExecutor)driver;
 				  jse.executeScript("window.scrollTo(0,1000)");
 			  }
-
+			  
+			  public static String takeScreenShot(WebDriver driver,String screenShotName)
+			  {
+				  TakesScreenshot takesScreenshot=(TakesScreenshot)driver;
+				  File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
+				  File des = new File("./Screenshot/"+screenShotName+".png");
+				  try {
+					FileUtils.copyFile(src, des);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				  return screenShotName;
+			  }
 	}
 	
 
