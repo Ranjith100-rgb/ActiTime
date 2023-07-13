@@ -45,8 +45,8 @@ public class BaseClass
 	public void LaunchBrowser() throws Throwable
 	{
 		String ENV_FILE_PATH = fLib.getFilePathFromPropertyFile("EnviConfigData");
-		BROWSER = fLib.getDataFromPropertyFile(ENV_FILE_PATH, "browser");
-		URL =fLib.getDataFromPropertyFile(ENV_FILE_PATH, "url");
+		BROWSER = System.getProperty("browser", fLib.getDataFromPropertyFile(ENV_FILE_PATH, "browser"));
+		URL =System.getProperty("url", fLib.getDataFromPropertyFile(ENV_FILE_PATH, "url"));
 		if(BROWSER.equals("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
