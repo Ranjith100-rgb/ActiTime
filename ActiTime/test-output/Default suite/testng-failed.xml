@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.actiTime.testcase.Demo1">
+      <class name="com.actiTime.testcase.Demo1Test">
         <methods>
+          <include name="test1"/>
           <include name="CloseBrowser"/>
           <include name="CloseDB"/>
           <include name="LoginToApp"/>
-          <include name="test1"/>
           <include name="LaunchBrowser"/>
           <include name="LogOutOfApp"/>
           <include name="getDBconnection"/>
         </methods>
-      </class> <!-- com.actiTime.testcase.Demo1 -->
+      </class> <!-- com.actiTime.testcase.Demo1Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
