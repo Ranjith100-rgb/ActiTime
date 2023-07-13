@@ -4,6 +4,7 @@ import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -60,7 +61,7 @@ public class BaseClass
 		else if(BROWSER.equals("edge"))
 		{
 			WebDriverManager.edgedriver().setup();
-			driver=new FirefoxDriver();
+			driver=new EdgeDriver();
 		}
 		else
 		{
