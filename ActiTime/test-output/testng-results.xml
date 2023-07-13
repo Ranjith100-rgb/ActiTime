@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-13T11:12:28 IST" name="Default suite" finished-at="2023-07-13T11:12:43 IST" duration-ms="14222">
+    <groups>
+    </groups>
+    <test started-at="2023-07-13T11:12:28 IST" name="Default test" finished-at="2023-07-13T11:12:43 IST" duration-ms="14222">
+      <class name="com.actiTime.testcase.Demo1">
+        <test-method is-config="true" signature="getDBconnection()[pri:0, instance:com.actiTime.testcase.Demo1@37d4349f]" started-at="2023-07-13T11:12:28 IST" name="getDBconnection" finished-at="2023-07-13T11:12:28 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDBconnection -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.actiTime.testcase.Demo1@37d4349f]" started-at="2023-07-13T11:12:28 IST" name="LaunchBrowser" finished-at="2023-07-13T11:12:40 IST" duration-ms="11120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method is-config="true" signature="LoginToApp()[pri:0, instance:com.actiTime.testcase.Demo1@37d4349f]" started-at="2023-07-13T11:12:40 IST" name="LoginToApp" finished-at="2023-07-13T11:12:42 IST" duration-ms="2320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToApp -->
+        <test-method signature="test1()[pri:0, instance:com.actiTime.testcase.Demo1@37d4349f]" started-at="2023-07-13T11:12:42 IST" name="test1" finished-at="2023-07-13T11:12:42 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="LogOutOfApp()[pri:0, instance:com.actiTime.testcase.Demo1@37d4349f]" started-at="2023-07-13T11:12:42 IST" name="LogOutOfApp" finished-at="2023-07-13T11:12:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutOfApp -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.actiTime.testcase.Demo1@37d4349f]" started-at="2023-07-13T11:12:42 IST" name="CloseBrowser" finished-at="2023-07-13T11:12:43 IST" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="CloseDB()[pri:0, instance:com.actiTime.testcase.Demo1@37d4349f]" started-at="2023-07-13T11:12:43 IST" name="CloseDB" finished-at="2023-07-13T11:12:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDB -->
+      </class> <!-- com.actiTime.testcase.Demo1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
